@@ -3,6 +3,9 @@ exports.up = function (knex) {
     table.string('id').primary();
     table.string('name').notNullable();
     table.string('email').notNullable();
+    table.string('age', 2).notNullable();
+    table.string('cpf', 11).notNullable();
+    table.string('rg', 7).notNullable();
   });
 };
 

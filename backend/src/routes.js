@@ -14,8 +14,8 @@ routes.post('/profiles', UserController.create);
 
 routes.get('/profile', ProfileController.index);
 
-routes.get('/persoData', PersoDataController.index);
-routes.post('/persoData', PersoDataController.create);
-routes.delete('/persoData/:id', PersoDataController.delete);
+routes.get('/comments', PersoDataController.index);
+routes.post('/comments', PersoDataController.create);
+routes.delete('/comments/:id', PersoDataController.delete);
 
 module.exports = routes;

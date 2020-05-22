@@ -1,0 +1,82 @@
+textare:focus,
+input:focus {
+  outline: none;
+}
+
+/* container register  */
+#register-container {
+  background-color: #fff;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px;
+  margin-top: 10vh;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Formulário */
+form {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+form h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+label,
+input,
+.back-link,
+button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+input,
+.back-link,
+button {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border-bottom: 2px solid #08558b;
+}
+
+input[type='submit'] {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #08558b;
+}
+
+input[type='submit']:hover {
+  background-color: #1b223c;
+  transition: 0.5s;
+}
+
+.back-link,
+button {
+  text-decoration: none;
+}
+
+.back-link,
+button:hover {
+  background-color: #1b223c;
+  transition: 0.5s;
+}

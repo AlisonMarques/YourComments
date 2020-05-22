@@ -7,10 +7,17 @@ module.exports = {
     const [count] = await connection('userdata').count();
 
     const userdata = await connection('userdata')
-      .join('users', 'users.id', 'userdata.userdata_id')
+      .join('users', 'users.id', '=', 'userdata.userdata_id')
       .limit(5)
       .offset((page - 1) * 5)
-      .select(['userdata.*', 'users.name', 'users.email']);
+      .select([
+        'userdata.*',
+        'users.name',
+        'users.email',
+        'users.age',
+        'users.cpf',
+        'users.rg',
+      ]);
 
     response.header('X-Total-Count', count['count(*)']);
 
@@ -18,14 +25,11 @@ module.exports = {
   },
 
   async create(request, response) {
-    const { age, cpf, rg, about, instagram, facebook } = request.body;
+    const { about, instagram, facebook } = request.body;
 
     const userdata_id = request.headers.authorization;
 
     const [id] = await connection('userdata').insert({
-      age,
-      cpf,
-      rg,
       about,
       instagram,
       facebook,

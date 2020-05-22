@@ -1,0 +1,103 @@
+textare:focus,
+input:focus {
+  outline: none;
+}
+
+/* container register  */
+#new-comment-container,
+.back-link {
+  background-color: rgb(252, 245, 245);
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px;
+  margin: 32px auto;
+  margin-top: 10vh;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.back-link {
+  max-width: 200px;
+  padding: 60px 60px;
+}
+
+/* Formulário */
+form {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+form h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+input,
+.back-link,
+button {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border-bottom: 2px solid #08558b;
+}
+
+input[type='submit'],
+.back-link,
+button {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #08558b;
+}
+
+input[type='submit']:hover {
+  background-color: #1b223c;
+  transition: 0.5s;
+}
+
+.back-link {
+  text-decoration: none;
+}
+
+.back-link:hover {
+  background-color: #1b223c;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #1b223c;
+  transition: 0.5s;
+}
+
+form textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 150px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
