@@ -1,4 +1,4 @@
-# RegisterUser
+# YourComments
 Aplicativo destinado a registrar usuários e coletar informações pessoais.
 
 Aplicaçao simples, porém utilizando as melhores tecnologias da atualidade como: JavaScript, NodeJS, React, Express, SQLite3 e etc.
