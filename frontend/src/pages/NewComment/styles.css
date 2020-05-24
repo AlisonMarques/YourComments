@@ -1,11 +1,10 @@
+/* container register  */
 textare:focus,
 input:focus {
   outline: none;
 }
 
-/* container register  */
-#new-comment-container,
-.back-link {
+#new-comment-container {
   background-color: rgb(252, 245, 245);
   width: 100%;
   max-width: 1180px;
@@ -18,12 +17,19 @@ input:focus {
   text-align: center;
 }
 
+.back-link-comments {
+  max-width: 200px;
+  padding: 60px 60px;
+  margin-left: 0;
+}
+
 .back-link {
   max-width: 200px;
   padding: 60px 60px;
 }
 
 /* Formulário */
+
 form {
   margin-top: 30px;
   margin-bottom: 40px;
@@ -47,6 +53,7 @@ label {
 }
 
 input,
+.back-link-comments,
 .back-link,
 button {
   border-bottom: 2px solid #323232;
@@ -60,6 +67,7 @@ input:focus {
 }
 
 input[type='submit'],
+.back-link-comments,
 .back-link,
 button {
   text-align: center;
@@ -78,11 +86,12 @@ input[type='submit']:hover {
   transition: 0.5s;
 }
 
-.back-link {
+.back-link-comments {
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
-.back-link:hover {
+.back-link-comments:hover {
   background-color: #1b223c;
   transition: 0.5s;
 }
@@ -99,5 +108,5 @@ form textarea {
   color: #333;
   border: 1px solid #dcdce6;
   border-radius: 8px;
-  padding: 0 24px;
+  padding: 0 10px;
 }

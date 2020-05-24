@@ -43,7 +43,7 @@ export default function NewComment() {
         <form onSubmit={handleNewComment}>
           <h1>Register new comment</h1>
 
-          <Link className="back-link" to="/profile">
+          <Link className="back-link-comments" to="/profile">
             <FiArrowLeft size={16} color="#E02041" />
             Come back home
           </Link>
